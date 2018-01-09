@@ -10,6 +10,9 @@ import com.facebook.soloader.SoLoader;
 // facebook
 import com.magus.fblogin.FacebookLoginPackage;
 
+// google
+import co.apptailor.googlesignin.RNGoogleSigninPackage;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,7 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-          new FacebookLoginPackage()
+          new FacebookLoginPackage(),
+          new RNGoogleSigninPackage()
       );
     }
 

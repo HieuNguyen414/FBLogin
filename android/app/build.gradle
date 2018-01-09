@@ -141,6 +141,12 @@ dependencies {
     compile "com.android.support:appcompat-v7:23.0.1"
     // facebook
     compile project(':react-native-facebook-login')
+
+    // google
+    compile(project(":react-native-google-signin")){         
+        exclude group: "com.google.android.gms" 
+    }
+    compile 'com.google.android.gms:play-services-auth:9.2.1'
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
 
@@ -150,3 +156,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+apply plugin: 'com.google.gms.google-services'
