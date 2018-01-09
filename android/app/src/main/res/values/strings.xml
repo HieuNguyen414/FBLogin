@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Login</string>
+    <!-- add here -->
+    <string name="facebook_app_id">807113772805475</string>
+</resources>
